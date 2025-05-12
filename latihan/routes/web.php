@@ -1,20 +1,21 @@
 <?php
 
+use App\Http\Controllers\MateriController;
+use App\Http\Controllers\ProdiController;
+use App\Http\Controllers\FakultasController;
+use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\DosenController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/profil', function (): view {
-    return view('profil');
-});
+//Route::get('/materi/index', action: () 
+   // MateriController::class, 'index');
 
-Route::get('/berita/{id}', function ($id): view {
-    return view('berita'), ['id' => $id]; 
-});
-
-Route::get('/total/{angka1}/{angka2}', function ($angka1, $angka2): view {
-    $total = $angka1 + $angka2;
-    return view('hasil'), ['total' => $total];
-});
+    Route::resource('materi', MateriController::class);
+    Route::resource('Prodi', ProdiController::class);
+    Route::resource('fakultas', FakultasController::class);
+    Route::resource('mhs', MahasiswaController::class);
+    Route::resource('dosen', DosenController::class);
