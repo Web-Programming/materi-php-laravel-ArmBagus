@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class materi extends Model
+class Materi extends Model
 {
-    //
+    protected $table = 'materi';
 }

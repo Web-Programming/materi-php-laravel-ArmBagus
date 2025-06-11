@@ -77,10 +77,11 @@ class MateriController extends Controller
 // ];
 
 
+
     public function index()
     {
         $materis = materi::all();
-        return view('materi.index', compact('materis'));
+        return view('materi.index', compact('materi'));
     }
 
     /**
