@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>M-Tugas Beranda</title>
+    <title>Beranda</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -44,7 +44,7 @@
             <a href="#" class="logo d-flex align-items-center me-auto">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="assets/img/logo.png" alt=""> -->
-                <h1 class="sitename">M-Tugas</h1>
+                <h1 class="sitename">Apklikasi Tugas</h1>
             </a>
 
             <nav id="navmenu" class="navmenu">
@@ -73,7 +73,7 @@
             <div class="container">
                 <div class="row gy-4">
                     <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
-                        <h1>M-Tugas</h1>
+                        <h1>Beranda</h1>
                         <p>Apklikasi Manajemen Tugas</p>
                         <div class="d-flex">
                             @auth
@@ -82,9 +82,6 @@
                             <a href="{{ route('login')}}" class="btn-get-started">Login</a>
                             @endauth
                         </div>
-                    </div>
-                    <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="100">
-                        <img src="{{ asset('enno/assets/img/hero-img.png')}}" class="img-fluid animated" alt="">
                     </div>
                 </div>
             </div>

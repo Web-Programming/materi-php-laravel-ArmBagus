@@ -23,6 +23,7 @@ class TugasController extends Controller
             $data = array(
                     'title' => 'Data Tugas',
                     'menuKaryawanTugas' => 'active',
+                    'tugas' => Tugas::with('user')->where('user_id',$user->id)->first(),
                 );
             return view('karyawan.Tugas.index', $data);
         }
